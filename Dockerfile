@@ -17,7 +17,7 @@ WORKDIR /app
 COPY --from=build /app/target/api-myadress-0.0.1-SNAPSHOT.jar app.jar
 
 # Exponha a porta que a aplicação irá rodar
-EXPOSE 8080
+EXPOSE 4545
 
 # Comando para rodar a aplicação
 ENTRYPOINT ["java", "-jar", "app.jar"]
